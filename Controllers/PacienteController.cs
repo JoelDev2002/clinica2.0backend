@@ -34,11 +34,18 @@ namespace ClinicaMedica.Controllers
           return Created("", pacienteCreado);
       }
 
+      [HttpPut("{id}")]
+      public ActionResult<PacienteResponse> UpdatePaciente(long id, [FromBody] PacienteRequest pacienteRequest)
+    {
+      PacienteResponse updatePaciente= PacienteService.updatePaciente(id,pacienteRequest);
+      return Ok(updatePaciente);
+    } 
+
       [HttpDelete("{id}")]
       public ActionResult DeletePaciente(long id)
       {
-          PacienteService.deletePaciente(id);
-          return NoContent();
+        PacienteService.deletePaciente(id);
+        return NoContent();
       }
     }
-}
+} 
