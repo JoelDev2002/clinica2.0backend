@@ -1,0 +1,180 @@
+Escuela de Tecnología
+Unidad didáctica Desarrollo de Servicios Web
+Rúbrica Evaluación parcial
+Logros esperados ● Emplea los fundamentos de C# en el desarrollo de aplicaciones con .NET Core, garantizando una sintaxis clara y fuertemente 
+tipada para mejorar la mantenibilidad y legibilidad del código.
+● Aplica las buenas prácticas del estilo de arquitectura REST y los principios del diseño de microservicios para la creación de
+proyectos escalables y mantenibles.
+Indicaciones:
+● Contexto o situación problemática: 
+Una clínica privada necesita gestionar las citas médicas que los pacientes solicitan a diario. Actualmente, las citas se anotan manualmente en agendas físicas o se 
+confirman por llamadas telefónicas sin un control unificado, lo que genera confusión, pérdida de información y sobrecarga para el personal administrativo.
+Para solucionar este problema, como parte del equipo de desarrollo backend, usted y dos integrantes más han sido asignados para construir una API RESTful con C# 
+y .Net Core, con el objetivo de registrar, consultar, actualizar y cancelar citas médicas de manera eficiente y ordenada.
+● Pasos: 
+1. Modelado de clases
+○ Crear clases como Cita, Paciente, Médico, según el alcance definido.
+○ Simular el almacenamiento de datos usando listas o mapas (List<Cita>).
+2. Estructura del proyecto
+○ Separar el proyecto en paquetes: controller, service, model.
+Escuela de Tecnología
+○ Usar interfaces y clases de servicio para manejar la lógica de negocio.
+3. Creación de API REST
+○ Implementar endpoints CRUD (GET, POST, PUT, DELETE).
+○ Validar datos de entrada usando anotaciones como [Required], [StringLength], etc.
+4. Manejo de errores
+○ Implementar un manejo de excepciones centralizado.
+5. Documentación y pruebas
+○ Documentar endpoints y realizar pruebas funcionales con Postman.
+● Producto:
+Aplicación desarrollada con .Net Core que cumpla con:
+○ Registrar, consultar, actualizar y eliminar citas médicas de manera eficiente.
+○ Gestionar la información en estructuras de datos en memoria (ej. List, Map).
+○ Aplicar buenas prácticas de arquitectura de capas (controladores, servicios, modelos).
+○ Garantizar una sintaxis clara y tipada en C#.
+○ Documentar adecuadamente los endpoints de la API.
+○ Incluir validaciones con anotaciones y pruebas funcionales con Postman.
+○ Simular el manejo de datos sin conexión a base de datos, utilizando listas en memoria o colecciones para almacenar temporalmente la información durante 
+la ejecución.
+La aplicación deberá ser subida a un repositorio en GitHub o plataforma similar, conteniendo el código fuente con una estructura clara y organizada, además de un 
+archivo README.md con instrucciones para instalar y ejecutar la aplicación. Adicionalmente, se solicitará un informe técnico que incluya la descripción del proyecto, 
+las capturas de las pruebas realizadas con Postman, el enlace del repositorio en GitHub o plataforma similar (con permisos de acceso de lectura para el docente), así 
+como la explicación de la estructura general del código y los roles del equipo en el desarrollo del proyecto.
+● Modalidad de trabajo: Grupal (3 integrantes). Los grupos deben formarse a más tardar en la sesión en la que se explica la rúbrica.
+● Parámetros de formato de presentación: Informe técnico en versión PDF.
+Solo 1 integrante del equipo debe subir el entregable a la plataforma virtual, ya que la calificación será común a todos los integrantes.
+Escuela de Tecnología
+CRITERIOS EN INICIO
+No evidencia o no alcanza lo mínimo 
+establecido en el nivel “En proceso”.
+EN PROCESO
+Evidencia haber alcanzado un nivel próximo 
+o cercano a lo esperado.
+LOGRADO
+Evidencia haber alcanzado el nivel de logro 
+esperado.
+SOBRESALIENTE
+Evidencia un nivel de logro superior al 
+esperado. 
+Programación 
+orientada a objetos 
+con C#
+No evidencia o no alcanza lo mínimo 
+establecido en el nivel “En proceso”.
+Desarrolla clases con atributos y métodos 
+que permiten estructurar una organización 
+inicial del código orientada a objetos, con 
+un nivel básico de cohesión entre sus 
+componentes.
+Desarrolla clases separadas y cohesionadas 
+con sus atributos, constructores y métodos 
+bien definidos, aplicando encapsulamiento y 
+facilitando la comprensión y reutilización del 
+código.
+Desarrolla un diseño orientado a objetos 
+con claridad, aplicando encapsulamiento, 
+abstracción, y reutilización mediante 
+interfaces o herencia, manteniendo un 
+código limpio, escalable y documentado a 
+detalle.
+1 punto 2 puntos 3 puntos 4 puntos
+Estructura del 
+proyecto y 
+organización de 
+componentes 
+No evidencia o no alcanza lo mínimo 
+establecido en el nivel “En proceso”.
+Estructura parcialmente las 
+responsabilidades y crea algunos paquetes 
+independientes que evidencian 
+acoplamiento o duplicación de lógica entre 
+capas en el sistema.
+Estructura el sistema con una arquitectura 
+con capas claras (modelo, servicio, 
+controlador), distribuyendo 
+responsabilidades de forma coherente y 
+encapsulando la lógica de negocio en 
+servicios, favoreciendo así la mantenibilidad 
+del código.
+Estructura el sistema con una arquitectura 
+con capas definidas, distribuyendo 
+responsabilidades con precisión y 
+organizando la lógica del negocio en 
+servicios independientes y reutilizables, 
+mediante interfaces y DTOs, bajo un 
+enfoque escalable y profesional.
+1 punto 2 puntos 3 puntos 4 puntos
+Creación de API’s 
+RESTful
+No evidencia o no alcanza lo mínimo 
+establecido en el nivel “En proceso”.
+Crea endpoints funcionales, con 
+inconsistencias en la nomenclatura de 
+rutas, usando de forma inicial métodos 
+HTTP o sin validaciones eficaces de entrada.
+Crea una API RESTful completa con endpoints 
+CRUD (GET, POST, PUT, DELETE), rutas 
+definidas, validaciones mediante anotaciones 
+como @Valid y @NotNull y respuestas claras, 
+utilizando códigos de estado HTTP 
+apropiados.
+Crea una API RESTful robusta y coherente 
+que incorpora endpoints CRUD 
+organizados, rutas jerárquicas, 
+validaciones avanzadas, manejo 
+centralizado de excepciones y respuestas 
+personalizadas con mensajes claros y 
+estructuras consistentes, utilizando 
+códigos de estado HTTP contextualizados.
+1 punto 2.5 puntos 3.5 puntos 4 puntos
+Escuela de Tecnología
+Desarrollo de una 
+simulación de 
+persistencia local
+No evidencia o no alcanza lo mínimo 
+establecido en el nivel “En proceso”
+Desarrolla una simulación básica de 
+persistencia local utilizando estructuras 
+como listas o mapas, con algunas 
+limitaciones en la gestión de 
+identificadores, actualizaciones o 
+eliminaciones.
+Desarrolla una simulación funcional y 
+organizada de persistencia local, utilizando 
+List o Map, implementando de forma precisa 
+las operaciones CRUD y gestionando 
+eficazmente los datos en tiempo de 
+ejecución.
+Desarrolla una simulación de persistencia 
+local eficiente y bien estructurada, con 
+servicios que controlan la lógica de 
+manipulación de datos, aplican 
+validaciones y separan responsabilidades, 
+reflejando el comportamiento de una base 
+de datos real.
+1 punto 2 puntos 3 puntos 4 puntos
+Documentación y 
+pruebas del sistema
+No evidencia o no alcanza lo mínimo 
+establecido en el nivel “En proceso”
+Presenta un README,md básico con 
+detalles mínimos o poco claros sobre la 
+ejecución del sistema y con pruebas 
+incompletas o sin estructura.
+Presenta un README.md completo, 
+detallando la instalación y ejecución de la 
+aplicación, y evidenciando las pruebas 
+realizadas, mediante capturas, ejemplos 
+funcionales o colecciones de Postman.
+Presenta un README.md estructurado 
+que incluye instrucciones precisas, 
+pruebas automatizadas o funcionales con 
+capturas o colecciones de Postman, 
+además de ejemplos de uso de endpoints 
+y una explicación clara del 
+comportamiento de la API.
+1 punto 2.5 puntos 3.5 puntos 4 puntos
+Fórmula:
+Puntaje en evaluación: Criterio 1 + Criterio 2 + Criterio 3 + Criterio 4 + Criterio 5
+ 
+Puntaje de la evaluación:
