@@ -48,4 +48,4 @@ namespace ClinicaMedica.Controllers
         return NoContent();
       }
     }
-} 
+}  
