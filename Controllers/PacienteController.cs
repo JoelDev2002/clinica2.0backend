@@ -31,7 +31,7 @@ namespace ClinicaMedica.Controllers
       public ActionResult<PacienteResponse> CreatePaciente([FromBody] PacienteRequest paciente)
       {
           PacienteResponse pacienteCreado = PacienteService.createPaciente(paciente);
-          return Created("", pacienteCreado);
+          return Created($"api/paciente/{pacienteCreado.PacienteId}", pacienteCreado);
       }
 
       [HttpPut("{id}")]

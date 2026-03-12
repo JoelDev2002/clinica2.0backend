@@ -478,13 +478,30 @@ Content-Type: application/json
 
 ## 🧪 Pruebas con Postman
 
-### Colección de Postman
+### 🚀 Colección de Postman Automatizada
+Se incluye la colección oficial de Postman con pruebas automatizadas integradas para validar el comportamiento de todos los endpoints.
 
-Se adjunta la colección oficial de Postman con **todos los endpoints** preconfigurados para ejecutar pruebas funcionales de manera inmediata.
+📂 **Archivo:** [Clinica-ciclo5-parcial.postman_collection.json](./Clinica-ciclo5-parcial.postman_collection.json)
 
-📂 **Archivo:** `ClinicaBackend.postman_collection.json` *(en la raíz del repositorio)*
+> **Instrucciones:**
+> 1. Abre **Postman**.
+> 2. Haz clic en el botón **Import**.
+> 3. Selecciona el archivo `Clinica-ciclo5-parcial.postman_collection.json` de la carpeta del proyecto.
+> 4. Una vez importado, puedes ejecutar todas las pruebas usando el **Collection Runner**.
 
-> Para importar: abre Postman → **Import** → selecciona el archivo `.json`.
+### 📸 Evidencia Funcional
+
+#### 1. Ejecución del Runner de Postman
+![captura](evidencias/captura1.png)
+
+#### 2. Prueba: Crear Paciente (POST)
+![captura](evidencias/captura2.png)
+
+#### 3. Prueba: Crear Cita (POST)
+![captura](evidencias/captura3.png)
+
+#### 4. Prueba: Manejo de Errores (404 Not Found)
+![captura](evidencias/captura4.png)
 
 ### Orden recomendado para las pruebas
 

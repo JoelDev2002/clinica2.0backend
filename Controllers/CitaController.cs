@@ -16,7 +16,7 @@ namespace ClinicaMedica.Controllers
     public ActionResult<CitaResponse> CreateCita([FromBody] CitaRequest cita)
     {
         CitaResponse citaCreada = CitaService.CreateCita(cita);
-        return Created("la cita fue creada", citaCreada);
+        return Created($"api/cita/{citaCreada.CitaId}", citaCreada);
     }
 
     [HttpDelete("{id}")]

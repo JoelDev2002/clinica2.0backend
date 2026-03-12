@@ -101,6 +101,8 @@ public class CitaService : ICitaService
 
         if(citaExists == null) throw new NotFoundException("No se encontro la cita con id: " + id);
 
+        if(cita.NuevaFecha < DateTime.Now) throw new BadRequestException("La nueva fecha de la cita no puede ser en el pasado");
+
         citaExists.Fecha = cita.NuevaFecha;
 
         Cita citaActualizada = CitaBd.UpdateCita(citaExists.CitaId,citaExists);

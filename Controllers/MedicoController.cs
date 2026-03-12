@@ -31,14 +31,14 @@ namespace ClinicaMedica.Controllers
       public ActionResult<MedicoResponse> CreateMedico([FromBody] MedicoRequest medicoRequest)
       {
           MedicoResponse medicoCreado = MedicoService.createMedico(medicoRequest);
-          return Created("", medicoCreado);
+          return Created($"api/medico/{medicoCreado.MedicoId} ", medicoCreado);
       }
 
       [HttpPut("{id}")]
       public ActionResult<MedicoResponse> UpdateMedico(long id, [FromBody] MedicoRequest medicoRequest)
     {
       MedicoResponse updateMedico =MedicoService.updateMedico(id,medicoRequest);
-      return Ok();
+      return Ok(updateMedico);
     }
 
       [HttpDelete("{id}")]

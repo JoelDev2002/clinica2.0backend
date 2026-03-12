@@ -32,3 +32,4 @@ C:\Users\user\Desktop\proyectos\cSharp\CursoCsharp\ClinicaBackend\obj\Debug\net1
 C:\Users\user\Desktop\proyectos\cSharp\CursoCsharp\ClinicaBackend\obj\Debug\net10.0\ClinicaBackend.genruntimeconfig.cache
 C:\Users\user\Desktop\proyectos\cSharp\CursoCsharp\ClinicaBackend\obj\Debug\net10.0\ref\ClinicaBackend.dll
 C:\Users\user\Desktop\proyectos\cSharp\CursoCsharp\ClinicaBackend\obj\Debug\net10.0\ClinicaBackend.sourcelink.json
+C:\Users\user\Desktop\proyectos\cSharp\CursoCsharp\ClinicaBackend\bin\Debug\net10.0\Clinica-ciclo5-parcial.postman_collection.json
