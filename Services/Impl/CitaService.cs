@@ -19,7 +19,7 @@ public class CitaService : ICitaService
 
         if (paciente == null ) throw new NotFoundException("no se encontro paciente con id: " + cita.PacienteId);
 
-        if (medico == null) throw new NotFoundException("no se encontro medico con id" + cita.MedicoId);
+        if (medico == null) throw new NotFoundException("no se encontro medico con id: " + cita.MedicoId);
 
         if (cita.Fecha < DateTime.Now) throw new BadRequestException("La fecha de la cita no puede ser en el pasado");
 

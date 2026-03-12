@@ -14,7 +14,7 @@ public class CitaBd : ICitaBd
 
     if (indiceCita == -1)
     {
-        throw new NotFoundException("Medico no encontrado");
+        throw new NotFoundException("Cita no encontrado");
     }
     citas.RemoveAt(indiceCita);
   }
@@ -42,7 +42,7 @@ public class CitaBd : ICitaBd
 
     if (indiceCita == -1)
     {
-        throw new NotFoundException("Medico no encontrado");
+        throw new NotFoundException("Cita no encontrado");
     }
     citas[indiceCita]=cita;
 
