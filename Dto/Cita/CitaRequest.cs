@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 public class CitaRequest
 {
   [Required (ErrorMessage = "El nombre es obligatorio")]
+  [StringLength(50,MinimumLength =3,ErrorMessage ="este campo debe contener entre 3 y 50 caracteres")]
   public string TipoCita { get; set; }="";
 
   [Required(ErrorMessage = "La fecha es obligatorio")]
